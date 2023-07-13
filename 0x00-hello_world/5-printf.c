@@ -1,8 +1,10 @@
 #include<stdio.h>
 
-/* This Function is responsible for running the programm */
+/*
+ * This Function is responsible for running the programm
+ */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
