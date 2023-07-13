@@ -3,7 +3,7 @@
 /**
  *  main -  This Function is responsible for running the programm
  *
- *  Return : Always 0
+ *  Return : Always 0 (Success)
  */
 int main(void)
 {
