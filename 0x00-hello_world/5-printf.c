@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /*
- * This Function is responsible for running the programm
+ * main -  This Function is responsible for running the programm
  */
 int main(void)
 {
