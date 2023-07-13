@@ -1,9 +1,9 @@
 #include<stdio.h>
 
 /**
- * main -  This Function is responsible for running the programm
+ * main - Entry point
  *
- * Return : Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
