@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*
+/**
  *  main -  This Function is responsible for running the programm
  *
  *  Return : an Integer
