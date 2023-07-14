@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * main - Prints all the Alphabet in lowercase excluding q and e
@@ -8,6 +8,7 @@
 int main(void)
 {
 	char c = 'a';
+
 	while (c <= 'z')
 	{ 
 		if (c != 'q' && c != 'e')
