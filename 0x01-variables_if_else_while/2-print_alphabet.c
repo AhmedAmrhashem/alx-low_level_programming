@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point
+ * main - Prints the Alphabet in lowercase
  *
- * Return : 0
+ * Return : Always rertun 0
  */
 int main(void)
 {
@@ -12,7 +12,6 @@ int main(void)
 	while (c <= 'z')
 	{
 		putchar(c);
-		putchar('\n');
 		c++;
 	}
 }

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints all numbers of base 10
  *
- * Rerurn : 0
+ * Rerurn : Always return 0
  */
 int main()
 {
@@ -16,4 +16,3 @@ int main()
 	}
 	return (0);
 }
-

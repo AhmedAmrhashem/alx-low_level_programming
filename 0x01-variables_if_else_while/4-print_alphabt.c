@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point
+ * main - Prints all the Alphabet in lowercase excluding q and e
  *
- * Return : 0
+ * Return : Always return 0
  */
 int main(void)
 {
-        char c = 'a';
+	char c = 'a';
 
-        while (c <= 'z')
-        { 
-		if ( c != 'q' && c!= 'e')
-			 putchar(c);
-                c++;
-        }
+	while (c <= 'z')
+	{ 
+		if (c != 'q' && c != 'e')
+			putchar(c);
+		c++;
+	}
 	return (0);
 }
-
