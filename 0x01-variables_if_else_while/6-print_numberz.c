@@ -3,14 +3,14 @@
 /**
  * main - Prints all numbers of base 10
  *
- * Rerurn: Always return 0
+ * Return: Always return 0
  */
 int main()
 {
-	unsigned char ch = '0';
+	int ch = '0';
 
 	while(ch <= '9')
-	{ 
+	{
 		putchar(ch);
 		ch++;
 	}
