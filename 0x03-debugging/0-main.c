@@ -2,7 +2,7 @@
 
 /**
 * main - tests function that prints if integer is positive or negative
-* Return: 0
+* Return: i
 */
 
 int main(void)
@@ -11,7 +11,6 @@ int main(void)
 
 	i = 98;
 	positive_or_negative(i);
-	printf(%d, i);
 
-	return (0);
+	return (i);
 }
