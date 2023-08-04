@@ -1,5 +1,5 @@
 #include "main.h"
-#include  <stdi.h>
+#include  <stdio.h>
 
 /**
  * main: a program that utilieses argv and argc
