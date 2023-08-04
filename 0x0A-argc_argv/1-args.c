@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include  <stdi.h>
 
 /**
  * main: a program that utilieses argv and argc
@@ -8,7 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%s",argv[0]);
-	argc - 1;
+	printf("%d\n", argc);
 	return (0);
 }
