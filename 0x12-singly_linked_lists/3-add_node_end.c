@@ -3,16 +3,16 @@
 #include "lists.h"
 
 /**
- * add_node - adding node at beginning of list
+ * add_node_end - adding node at end of list
  * @head: pointer to pointer to the head
  * @str: string  of struct
  * Return: new node
  */
-
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new = malloc(sizeof(list_t));
 	unsigned int lenght = 0;
+	list_t *end = *head;
 
 	if (new == NULL)
 		return (NULL);
@@ -22,8 +22,17 @@ list_t *add_node(list_t **head, const char *str)
 	while (str[lenght])
 		lenght++;
 	new->len = lenght;
-	new->next = (*head);
-	*head = new;
+	new->next = NULL;
+
+	if (*head == NULL)
+	{
+		*head = new;
+		return (new);
+	}
+	while (end->next)
+		end = end->next;
+
+	end->next = new;
 
 	return (new);
 }
