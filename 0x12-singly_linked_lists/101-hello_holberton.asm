@@ -1,5 +1,5 @@
 section .data
-    message db 'Hello, Holberton', 0xA ; 0xA is the ASCII code for a new line character
+    message db 'Hello, Holberton', 0xA
 
 section .text
     global main
@@ -7,12 +7,12 @@ section .text
 extern printf
 
 main:
-    sub rsp, 8 ; Align stack pointer
+    sub rsp, 8
 
-    mov edi, message ; Pass the address of the message string to printf
-    xor eax, eax ; Clear EAX register
-    call printf ; Call the printf function
+    mov edi, message
+    xor eax, eax
+    call printf
 
-    add rsp, 8 ; Restore stack pointer
-    mov eax, 0 ; Return 0 from main
+    add rsp, 8
+    mov eax, 0 
     ret
