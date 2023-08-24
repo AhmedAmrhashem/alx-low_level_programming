@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * list_len - returns the number of elements in a linked list
+ * list_len - returns the number of elements in a list
  * @h: a struct pointer
- * Return: counter
+ * Return: Number of Elements (counter)
  */
 size_t list_len(const list_t *h)
 {
