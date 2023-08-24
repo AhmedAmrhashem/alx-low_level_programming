@@ -1,7 +1,5 @@
 #include<stdio.h>
-
 void before_main(void)__attribute__ ((constructor));
-
 /**
  * before_main: prints a string before main
  * Retrun: void
