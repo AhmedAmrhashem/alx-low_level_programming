@@ -4,7 +4,7 @@ void before_main(void)__attribute__ ((constructor));
 
 /**
  * before_main: prints a string before main
- * Retrun: void 
+ * Retrun: void
  */
 void before_main(void)
 {
