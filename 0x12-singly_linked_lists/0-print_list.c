@@ -9,16 +9,16 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t 3adad = 0;
+	size_t a3adad = 0;
 
 	while (h)
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%ld] %s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		3adad++;
+		a3adad++;
 	}
-	return 3adad;
+	return a3adad;
 }
