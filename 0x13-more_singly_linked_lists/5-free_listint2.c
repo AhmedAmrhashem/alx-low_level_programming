@@ -5,18 +5,21 @@
 /**
  * free_listint - frees a linked list
  * @head: pointer to pointer to head
- * Return: void
  */
 void free_listint(listint_t *head)
 {
-        list_t *remove = head;
+        listint_t *removal;
 
-        while (head)
-        {
-                remove = head->next;
-                free(head->n);
-                free(head);
-                head = remove;
-		*head = null;		
-        }
+	if (head == NULL)
+		return;
+
+	while (*head)
+	{
+		removal = (*head)->next;
+		free(*head);
+		*head = removal;
+	}
+
+	*head = NULL;
+
 }
