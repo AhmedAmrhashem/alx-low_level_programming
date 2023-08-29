@@ -1,11 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
 
 /**
  * add_nodint - adds a node at the beggining of a list
  * @h: struct pointer
  * @n: constant integer
+ *
  * Return: the address of the new element, or NULL if it failed
  */
 listint_t *add_nodeint(listint_t **head, const int n)
