@@ -9,21 +9,21 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-        unsigned long int index;
-        hash_node_t *tmp = NULL;
+	unsigned long int index;
+	hash_node_t *tmp;
 
-        index = key_index(key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 
-        if (!(ht->array[index]))
-                return (NULL);
-        else
-        {
-                tmp = ht->array[index];
-                if (!strcmp(tmp->key, key))
-                {
-                        return (tmp->value);
-                }
-                tmp = tmp->next;
-        }
-        return (NULL);
-}	
+	if (!(ht->array[index]))
+		return (NULL);
+	else
+	{
+		tmp = ht->array[index];
+		if (!strcmp(tmp->key, key))
+		{
+			return (tmp->value);
+		}
+		tmp = tmp->next;
+	}
+	return (NULL);
+}

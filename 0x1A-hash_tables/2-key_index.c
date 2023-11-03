@@ -1,4 +1,4 @@
-#include "hash_table.h"
+#include "hash_tables.h"
 
 /**
  * key_index - gives the indext to a key
@@ -9,9 +9,9 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	usigned long int index;
+	unsigned long int index;
 
-	index = hash_djb(key);
+	index = hash_djb2(key);
 
 	return (index % size);
 }
